@@ -1,6 +1,6 @@
 {
-  "name": "react-native-mentions-editor",
-  "version": "1.0.11",
+  "name": "react-native-mentions-editor2",
+  "version": "1.0.12",
   "description": "Mentions for React-Native. Tested on iOS. Should work on Andriod.",
   "main": "index.js",
   "scripts": {
@@ -8,23 +8,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrazadar/react-native-mentions-editor.git"
+    "url": "git+https://github.com/bahattincinic/react-native-mentions-editor.git"
   },
   "keywords": [
     "react-native-mentions",
-    "react native mentions",    
+    "react native mentions",
     "react-native",
     "react-component",
     "editor",
     "mobile",
     "ios",
     "android",
-    "mentions"    
+    "mentions"
   ],
   "author": "Muhammad Raza Dar <mrazadar@gmail.here> (https://about.me/mrazadar)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mrazadar/react-native-mentions-editor/issues"
+    "url": "https://github.com/bahattincinic/react-native-mentions-editor/issues"
   },
-  "homepage": "https://github.com/mrazadar/react-native-mentions-editor#readme"
+  "homepage": "https://github.com/bahattincinic/react-native-mentions-editor#readme",
+  "dependencies": {}
 }
