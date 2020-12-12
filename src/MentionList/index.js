@@ -33,16 +33,13 @@ export class MentionList extends React.PureComponent {
   render() {
     const { props } = this;
 
-    const { keyword, isTrackingStarted } = props;
-    const withoutAtKeyword = keyword.substr(1, keyword.length);
-    const list = this.props.list;
-    const suggestions =
-      withoutAtKeyword !== ""
-        ? list.filter(user => user.username.includes(withoutAtKeyword))
-        : list;
+    const { isTrackingStarted } = props;
+    const suggestions = this.props.list;
+
     if (!isTrackingStarted) {
       return null;
     }
+
     return (
       <Animated.View
         style={[
