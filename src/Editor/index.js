@@ -7,7 +7,7 @@ import {
   Text,
   Animated,
   Platform,
-  ScrollView
+  KeyboardAvoidingView
 } from "react-native";
 
 import EU from "./EditorUtils";
@@ -528,13 +528,8 @@ export class Editor extends React.Component {
           />
         )}
         <View style={[styles.container, editorStyles.mainContainer]}>
-          <ScrollView
-            ref={scroll => {
-              this.scroll = scroll;
-            }}
-            onContentSizeChange={() => {
-              this.scroll.scrollToEnd({ animated: true });
-            }}
+          <KeyboardAvoidingView
+            behavior={Platform.OS === 'ios' ? 'padding' : null} enabled
             style={[styles.editorContainer, editorStyles.editorContainer]}
           >
             <View style={[{ height: this.state.editorHeight }]}>
@@ -578,7 +573,7 @@ export class Editor extends React.Component {
                 maxLength={500}
               />
             </View>
-          </ScrollView>
+          </KeyboardAvoidingView>
         </View>
       </View>
     );
